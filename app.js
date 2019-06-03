@@ -64,10 +64,7 @@ app.use(express.static(path.join(__dirname + 'public')));
 
 //Mongoose
 mongoose.Promise = global.Promise;
-mongoose.connect(db.mongoURI, {
-  useNewUrlParser: true
-}).
-then((result) => {
+mongoose.connect(db.mongoURI, {useNewUrlParser: true}).then((result) => {
   console.log(`Conectado ao mongo!`);
 }).catch((err) => {
   console.log(`Erro ao se conectar + ${err}!`);
