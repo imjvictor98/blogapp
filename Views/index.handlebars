@@ -1,0 +1,25 @@
+<div class="jumbotron">
+  <h1 class="display-4">Node JS</h1>
+  <p class="lead">Ambiente de execução Javascript server-side.</p>
+  <hr class="my-4">
+  <p>E possível criar aplicações Javascript para rodar como uma aplicação standalone em uma máquina, não dependendo de um browser para a execução, como estamos acostumados.</p>
+  <a class="btn btn-primary btn-lg " href="#" role="button">Crie uma conta <3 </a>
+</div>
+<hr>
+<h2>Postagens recentes: </h2>
+
+{{#each postagens}}
+    <div class="card mt-4">
+        <div class="card-body">
+            <h3>{{titulo}}</h3>
+            <p>Descricao: {{descricao}}</p>
+            <small>Categoria: {{categoria.nome}}</small><br>
+            <small>Data de publicacao: {{#formatDate data}}{{/formatDate}}</small><br>
+            <a href="/postagem/{{slug}}">
+                <button class="btn btn-primary mt-2">Leia mais</button>
+            </a>
+        </div>
+    </div>
+{{else}}
+    <h5>Nenhuma postagem</h5>
+{{/each}}
