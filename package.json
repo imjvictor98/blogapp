@@ -12,7 +12,7 @@
     "express-session": "^1.16.1",
     "handlebars-intl": "^1.1.2",
     "moment": "^2.24.0",
-    "mongoose": "^5.5.11",
+    "mongoose": "^5.7.5",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0"
   },
